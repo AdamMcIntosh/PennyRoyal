@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="EUR_USD" Class="EUR_USDDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=EUR_USD;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False" SettingsObjectName="PennyRoyal.Properties.Settings" SettingsPropertyName="EUR_USDConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.SimpleTrendFollowing" Member="SimpleTrendFollowings">
+    <Type Name="SimpleTrendFollowing">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="BarTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SystemTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TimeFrame" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="SMA50" Type="System.Decimal" DbType="Decimal(18,9)" CanBeNull="true" />
+      <Column Name="Trend" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="StandardDeviation" Type="System.Decimal" DbType="Decimal(18,9)" CanBeNull="true" />
+      <Column Name="Distance" Type="System.Decimal" DbType="Decimal(18,9)" CanBeNull="true" />
+      <Column Name="TakeProfit" Type="System.Decimal" DbType="Decimal(18,9)" CanBeNull="true" />
+      <Column Name="StopLoss" Type="System.Decimal" DbType="Decimal(18,9)" CanBeNull="true" />
+      <Column Name="Trade" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="ProfitTrades" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LossTrades" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TotalTrades" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AccountBalance" Type="System.Decimal" DbType="Decimal(18,9)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BarData" Member="BarDatas">
+    <Type Name="BarData">
+      <Column Name="SystemTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="BarTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="o" Type="System.Decimal" DbType="Decimal(18,9) NOT NULL" CanBeNull="false" />
+      <Column Name="h" Type="System.Decimal" DbType="Decimal(18,9) NOT NULL" CanBeNull="false" />
+      <Column Name="l" Type="System.Decimal" DbType="Decimal(18,9) NOT NULL" CanBeNull="false" />
+      <Column Name="c" Type="System.Decimal" DbType="Decimal(18,9) NOT NULL" CanBeNull="false" />
+      <Column Name="Volume" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Timeframe" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

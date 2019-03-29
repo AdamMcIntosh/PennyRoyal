@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="EUR_USD">
+  <DataContextMoniker Name="/EUR_USDDataContext" />
+  <nestedChildShapes>
+    <classShape Id="09ca3cc5-c28c-4ee3-810b-3873362aae5f" absoluteBounds="3.75, 1.5, 2, 3.6939111328124996">
+      <DataClassMoniker Name="/EUR_USDDataContext/SimpleTrendFollowing" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e75d2029-647b-43f1-9b1e-37c643fcd591" absoluteBounds="3.7649999999999997, 1.96, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d04a8de4-fd66-4eb9-8d77-36d4464ff8bb" absoluteBounds="1.375, 1.125, 2, 2.5401025390625">
+      <DataClassMoniker Name="/EUR_USDDataContext/BarData" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5f92f801-4b06-4915-93ec-e36e454fd5d1" absoluteBounds="1.3900000000000001, 1.585, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
